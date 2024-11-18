@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProductCategory.Models
 {
-    internal class ArticleCategory
+     class ArticleCategory
     {
         public int ArticleId { get; protected set; }
         public int CategoryId { get; protected set; }
-  
+        public ArticleCategory(int articleId)
+        {
+            ArticleId = articleId;
+        }
     }
 }
